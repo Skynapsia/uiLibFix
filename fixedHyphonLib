@@ -294,7 +294,7 @@ do
     }
 
     if not startup_args.ignoreui then
-        library.screengui = Instance.new('ScreenGui') -- library.screengui.Parent = coreGui
+        library.screengui = Instance.new('ScreenGui')
         library.screengui.Parent = game:GetService('CoreGui')
 
         local button = Instance.new('ImageButton')
@@ -2782,14 +2782,14 @@ do
         })
 
         colorpicker.objects.sat = library:create('rect', {
-            Data = library.images.colorsat1,
+            Data = library.images,
             Size = udim2_new(1,0,1,0),
             Parent = colorpicker.objects.color,
             ZIndex = colorpicker.zindex + 6,
         }, 'Image')
 
         colorpicker.objects.val = library:create('rect', {
-            Data = library.images.colorsat2,
+            Data = library.images,
             Size = udim2_new(1,0,1,0),
             Parent = colorpicker.objects.color,
             ZIndex = colorpicker.zindex + 7,
